@@ -18,3 +18,27 @@ sudo apt-get install iverilog
 ```
 
 
+# Contributors 
+
+- **B Sathiya Naraayanan** 
+- **Kunal Ghosh** 
+
+
+
+# Acknowledgments
+
+
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+
+# Contact Information
+
+- B Sathiya Naraayanan, IMT2020534, International Institute of Information Technology, Bangalore  ,Sathiya.Naraayanan@iiitb.ac.in
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
+
+# References
+
+- [Bigspicy github](https://github.com/google/bigspicy)
+
+
+
+
