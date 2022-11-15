@@ -20,10 +20,9 @@ sudo apt-get install iverilog
 ## Converting SPICE files 
 
 The spice files should be in xyce format.The convertion was done in the following repository.
-```
+
 https://github.com/LokeshMaji
 
-```
 ## Compiling Protobufs
 
 We have to compile the protobufs into the python file.
