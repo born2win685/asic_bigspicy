@@ -1,8 +1,0 @@
-LICENSE
-README.md
-setup.py
-bigspicy.egg-info/PKG-INFO
-bigspicy.egg-info/SOURCES.txt
-bigspicy.egg-info/dependency_links.txt
-bigspicy.egg-info/requires.txt
-bigspicy.egg-info/top_level.txt
