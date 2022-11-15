@@ -17,11 +17,38 @@ bigspicy is a tool for merging circuit descriptions (netlists), generating Spice
 sudo apt-get install iverilog
 ```
 # Pre-requesites
+## Converting SPICE files 
 
 The spice files should be in xyce format.The convertion was done in the following repository.
+```
+https://github.com/LokeshMaji
 
+```
+## Compiling Protobufs
+
+We have to compile the protobufs into the python file.
+```
+git submodule update --init   
+protoc --proto_path vlsir vlsir/*.proto vlsir/*/*.proto --python_out=.
+protoc proto/*.proto --python_out=.
+
+```
 # Merging files into Circuit protobuf
 
+The files are now merged into circuit protobuf.This (final.pb) can be used to generate whole module spice models.
+We can use that to conduct various tests using xyce.Type the following (after cloning this directory) to merge the files.
+
+```
+./bigspicy.py \
+    --import \
+    --verilog src/iiitb_counter.synth.v \
+    --spef src/iiitb_counter.spef \
+    --spice_header lib/sky130_fd_sc_hd.spice \
+    --top iiitb_counter \
+    --save final.pb \
+    --working_dir /tmp/bigspicy
+
+```
 # Contributors 
 
 - **B Sathiya Naraayanan** 
