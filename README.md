@@ -38,10 +38,10 @@ We can use that to conduct various tests using xyce.Type the following (after cl
 ```
 ./bigspicy.py \
     --import \
-    --verilog src/iiitb_counter.synth.v \
-    --spef src/iiitb_counter.spef \
+    --verilog src/3bit_rc/iiitb_3bit_rc.synth.v \
+    --spef src/3bit_rc/iiitb_3bit_rc.spef \
     --spice_header lib/sky130_fd_sc_hd.spice \
-    --top iiitb_counter \
+    --top iiitb_3bit_rc  \
     --save final.pb \
     --working_dir /tmp/bigspicy
 
