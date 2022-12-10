@@ -38,10 +38,14 @@ We can use that to conduct various tests using xyce.Type the following (after cl
 ```
 ./bigspicy.py \
     --import \
-    --verilog src/iiitb_counter_netlist.v \
-    --spef src/iiitb_counter.spef \
-    --spice_header lib/sky130_fd_sc_hd.spice \
-    --top iiitb_counter  \
+    --spef example_inputs/iiitb_counter.spef \
+    --spice lib/sky130_fd_sc_hd.spice \
+    --verilog example_inputs/iiitb_counter/iiitb_counter.v \
+    --spice_header lib/sky130_fd_pr__pfet_01v8_hvt.pm3.spice\
+    --spice_header lib/sky130_fd_pr__pfet_01v8.pm3.spice \
+    --spice_header lib/sky130_fd_pr__nfet_01v8.pm3.spice \
+    --spice_header lib/sky130_ef_sc_hd__decap_12.spice \
+    --top iiitb_counter\
     --save final.pb \
     --working_dir /tmp/bigspicy
 
@@ -50,7 +54,17 @@ We can use that to conduct various tests using xyce.Type the following (after cl
 # Generating whole module Spice model
 
 ```
-
+  
+    ./bigspicy.py \
+    --verilog example_inputs/iiitb_counter/iiitb_counter.v \
+    --spice lib/sky130_fd_sc_hd.spice \
+    --spice_header lib/sky130_fd_pr__pfet_01v8_hvt.pm3.spice\
+    --spice_header lib/sky130_fd_pr__pfet_01v8.pm3.spice \
+    --spice_header lib/sky130_fd_pr__nfet_01v8.pm3.spice \
+    --spice_header lib/sky130_ef_sc_hd__decap_12.spice \
+    --save final.pb \
+    --top iiitb_counter\
+    --flatten_spice --dump_spice spice.sp
 
 
 ```
