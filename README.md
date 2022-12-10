@@ -46,6 +46,14 @@ We can use that to conduct various tests using xyce.Type the following (after cl
     --working_dir /tmp/bigspicy
 
 ```
+
+# Generating whole module Spice model
+
+```
+
+
+
+```
 # Contributors 
 
 - **B Sathiya Naraayanan** 
