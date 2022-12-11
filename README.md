@@ -9,13 +9,6 @@ bigspicy is a tool for merging circuit descriptions (netlists), generating Spice
 - ``` bigspicy ``` for making a single circuit protobuf
 - ``` xyce ``` for performing test
 
-# Installation of tools
-
-## Icarius verilog
-
-``` 
-sudo apt-get install iverilog
-```
 # Pre-requesites
 ## Converting SPICE files 
 
@@ -68,6 +61,9 @@ We can use that to conduct various tests using xyce.Type the following (after cl
 
 
 ```
+# Future Works
+The spice file and circuit protobuf was generated successfully.The use of bigspicy tool is done.Now,we can perform timing analysis on the created
+spice file(.sp file) using xyce tool.
 # Contributors 
 
 - **B Sathiya Naraayanan** 
@@ -79,6 +75,7 @@ We can use that to conduct various tests using xyce.Type the following (after cl
 
 
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+- Arya Raeis-Parsi
 
 # Contact Information
 
