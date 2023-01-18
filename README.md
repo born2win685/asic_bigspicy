@@ -12,7 +12,7 @@ bigspicy is a tool for merging circuit descriptions (netlists), generating Spice
 # Pre-requesites
 ## Converting SPICE files 
 
-The spice files should be in xyce format.The convertion was done in the following [repository](https://github.com/LokeshMaji).
+The spice files should be in xyce format.The convertion was already done.
 
 ## Compiling Protobufs
 
